@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*This section covers the body*/
+body {
+    background-image: url(../Images/Repeat.jpg);
+    background-size: 100%;
+}
+/*This section covers the header*/
+header {
+    width: 100%;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h1 {
+    width: 25%;
+}
+/*This section focuses on the navigation in the header*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 75%;
+}
+/*This section focuses on the listed item in the header*/
+.header nav ul {
+    list-style-type: none;
+    margin-left: 800px;
+}
+
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 300px;
+    border: solid 2px white;
+    padding: 2px;
+    margin: 2px;
+    background-color: rgb(43, 111, 167);
+    position: relative;
+    z-index: 1;
+
+}
+/*This section focuses on what happens when the lsietd items are functional*/
+.header nav ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:grey;
+    z-index: -1;
+    transform: scalex(0);
+} 
+
+.header nav ul li:hover::after {
+    transform: scalex(1);
+}
+/*This is the earth in the center of the backround*/
+.bigpick {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    border-radius: 50px;
+    width: 50%;
+    clip-path: circle(175px);
+}
+/*This is the picture of me*/
+.DomDom {
+    display: block;
+    width: 15%;
+    padding: 2%;
+    border-radius: 50px;
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/*I combined classes with the same attributes*/
+.Bio, .My_Work, .Contact_Information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid 3px white;
+    background-color: rgb(0, 30, 129);
+    color: #ffffff;
+}
+/*The body is being focused on below*/
+h2 {
+    width: 10%;
+    font-size: xx-large;
+}
+.body {
+    width: 90%;
+    border-left: solid 2px white;
+    padding-left: 30px;
+}
+#Projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-card {
+    width: 30%;
+}
+#Project1 {
+    width: 100%;
+    background-image: ;
+}
+.Lake, .Organized, .Phone {
+    display: flex;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+p {
+    width: 25%;
+}
+/*The css code below helps adjust the screen to fit under and over a certain size*/
+@media screen and (max-width: 768px) {
+.project-card {
+    width: 100%;
+}    
+}
+@media screen and (max-width: 992px) {
+.project-card {
+    width: 50%;
+}        
+}
